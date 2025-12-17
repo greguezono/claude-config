@@ -1,0 +1,15 @@
+# DocumentDB Connection Configuration Template
+# Copy this file and fill in actual credentials
+
+# Billing Service DocumentDB
+billing_uri: "mongodb://biller:{PASSWORD}@billing-service-documentdb-cluster.cluster-cmus3xwk5ytb.us-east-1.docdb.amazonaws.com/billing-external?authMechanism=SCRAM-SHA-1&retryWrites=false"
+
+# Yardi Integration DocumentDB
+yardi_uri: "mongodb://yardi_user:{PASSWORD}@flex-prod-yardiintegration.cluster-cmus3xwk5ytb.us-east-1.docdb.amazonaws.com/yardi?authMechanism=SCRAM-SHA-1&retryWrites=false"
+
+# Connection Notes:
+# - Replace {PASSWORD} with actual credentials
+# - authMechanism=SCRAM-SHA-1 is REQUIRED for DocumentDB
+# - retryWrites=false is REQUIRED (DocumentDB doesn't support retryable writes)
+# - Requires VPN or VPC access to reach DocumentDB clusters
+# - For TLS: add tlsCAFile parameter pointing to rds-combined-ca-bundle.pem

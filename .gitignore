@@ -1,0 +1,12 @@
+.DS_Store
+debug/
+file-history/
+ide/
+plans/
+plugins/
+projects/
+session-env/
+shell-snapshots/
+statsig/
+todos/
+history.jsonl

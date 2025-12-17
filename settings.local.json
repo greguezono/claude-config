@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find:*)",
+      "Bash(cat:*)",
+      "Bash(chmod:*)",
+      "WebFetch(domain:github.com)",
+      "WebSearch",
+      "WebFetch(domain:medium.com)",
+      "WebFetch(domain:indiit.com)",
+      "WebFetch(domain:viewlytics.ai)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
