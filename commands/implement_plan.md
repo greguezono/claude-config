@@ -5,6 +5,7 @@ description: Implement technical plans with phase-by-phase verification and agen
 # Implement Plan
 
 You are tasked with implementing an approved technical plan created by Claude Code's plan mode.
+Ask the user for clarifying questions if hard stuck.
 
 ## Workflow
 
@@ -164,3 +165,4 @@ If the plan has existing checkmarks:
 - Verify previous work only if something seems off
 
 Remember: You're implementing a solution, not just checking boxes. Keep the end goal in mind and maintain forward momentum.
+Make no assumptions, if you are stuck and cannot resolve an ambiguity ask the user for clarification≥
