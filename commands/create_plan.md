@@ -205,8 +205,66 @@ After structure approval:
    - No need to manually specify filename format
 2. **Use this template structure**:
 
+**Important Notes on Status Summary:**
+- Always include the Status Summary at the top of every plan
+- List all phases with checkboxes for trackable items
+- Use descriptive phase names that reflect what's being accomplished
+- Section types should match the phase content (e.g., "Tasks" for implementation, "Verification Commands" for checks, "Test Scenarios" for testing)
+- Keep checklist items specific and actionable
+- Include Prerequisites for phases that depend on previous work
+- Update dates as YYYY-MM-DD format
+- Progress Summary shows X/N phases complete
+
 ````markdown
 # [Feature/Task Name] Implementation Plan
+
+## Status Summary
+
+**Overall Status**: Not Started
+**Created**: [YYYY-MM-DD]
+**Last Updated**: [YYYY-MM-DD]
+**Total Phases**: [N]
+**Blockers**: None
+
+---
+
+### Phase 1: [Descriptive Phase Name] ⏸️ Not Started
+
+**[Section Type - e.g., Tasks/Actions/Steps/Requirements]:**
+- [ ] [Specific item 1 with clear actionable description]
+- [ ] [Specific item 2 with clear actionable description]
+
+**[Optional Context - e.g., Files Modified/Prerequisites/Dependencies]:**
+- [Context item 1]
+- [Context item 2]
+
+---
+
+### Phase 2: [Descriptive Phase Name] ⏸️ Not Started
+
+**Prerequisites**: [What must be complete before this phase]
+
+**[Section Type]:**
+- [ ] [Specific item with expected outcome or verification method]
+- [ ] [Specific item with expected outcome or verification method]
+
+---
+
+### Phase N: [Descriptive Phase Name] ⏸️ Not Started
+
+**Prerequisites**: [Previous phase requirements]
+
+**[Section Type]:**
+- [ ] [Item 1]
+- [ ] [Item 2]
+
+---
+
+**Progress Summary**: 0/[N] phases complete (0%)
+
+**Status Legend**: ⏸️ Not Started | 🔄 In Progress | ✅ Complete | ❌ Blocked
+
+---
 
 ## Overview
 
@@ -347,7 +405,8 @@ After structure approval:
    - Research actual code patterns using parallel sub-tasks
    - Include specific file paths and line numbers
    - Write measurable success criteria with clear automated vs manual distinction
-   - automated steps should use `make` whenever possible - for example `make test` instead of `cd backend && npm run test`
+   - Automated steps should use `make` whenever possible - for example `make test` instead of `cd backend && npm run test`
+   - Always include Status Summary at top of plan with all phases and checkboxes
 
 4. **Be Practical**:
    - Focus on incremental, testable changes

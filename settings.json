@@ -1,8 +1,8 @@
 {
-  "alwaysThinkingEnabled": true,
   "statusLine": {
     "type": "command",
     "command": "~/.claude/statusline.sh",
     "padding": 0
-  }
+  },
+  "alwaysThinkingEnabled": true
 }
